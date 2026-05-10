@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,17 @@
 
     <!-- Google Fonts: Hurricane para o nome e Montserrat para textos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Lavishly+Yours&family=League+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ephesis&family=Lavishly+Yours&family=League+Script&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome para Ícones -->
     <link rel="stylesheet" href="https://cloudflare.com">
-    
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="hero">
@@ -28,7 +32,7 @@
     <main>
         <section id="services" class="section">
             <h2>Nossos Serviços</h2>
-            
+
             <div class="service-card" onclick="toggleDetails(this)">
                 <div class="service-info">
                     <span class="service-title">Manicure Tradicional</span>
@@ -103,11 +107,16 @@
         <section id="location" class="section">
             <div class="location-card">
                 <h3>Visite o nosso Espaço</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Centro Comercial Rouxinol, 2º Piso<br>
-                Av. Luís de Camões, 10 - Loja 23<br>
-                2855-121 Corroios, Portugal</p>
+                <p>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="https://google.com" target="_blank" class="map-link">
+                        Centro Comercial Rouxinol, 2º Piso<br>
+                        Av. Luís de Camões, 10 - Loja 23<br>
+                        2855-121 Corroios, Portugal
+                    </a>
+                </p>
+
                 <p><i class="far fa-clock"></i> Seg a Sex: 08h às 17h | Sáb: 08h às 12h</p>
-                <p><i class="fas fa-phone"></i> +351 931 393 453</p>
             </div>
         </section>
     </main>
@@ -118,13 +127,15 @@
             <span class="close" onclick="closeModal()">&times;</span>
             <h3 style="font-family: 'Hurricane', cursive; font-size: 2.5rem;">Agendar Horário</h3>
             <p style="font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase;">Escolha a data e hora</p>
-            
+
             <input type="datetime-local" id="appointment-date" class="date-input" required>
-            
+
+
             <button class="btn-primary" onclick="confirmBooking()">Solicitar no WhatsApp</button>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
