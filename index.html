@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egly Vitiniski | Nail Studio</title>
+
+    <!-- Google Fonts: Hurricane para o nome e Montserrat para textos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Lavishly+Yours&family=League+Script&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome para Ícones -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>Egly <span>Vitiniski</span></h1>
+            <p>A arte de transformar suas mãos.</p>
+            <button class="btn-primary" onclick="scrollSchedule()">Agendar Agora</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="services" class="section">
+            <h2>Nossos Serviços</h2>
+            
+            <div class="service-card" onclick="toggleDetails(this)">
+                <div class="service-info">
+                    <span class="service-title">Manicure Tradicional</span>
+                    <span class="duration">1 hr</span>
+                    <span class="details-link">Ver detalhes</span>
+                </div>
+                <span class="price">€15</span>
+                <div class="details">Cuidado clássico para as unhas das mãos com esmaltação.</div>
+            </div>
+
+            <div class="service-card" onclick="toggleDetails(this)">
+                <div class="service-info">
+                    <span class="service-title">Alongamento \ Extensão</span>
+                    <span class="duration">3 hrs</span>
+                    <span class="details-link">Ver detalhes</span>
+                </div>
+                <span class="price">€38</span>
+                <div class="details">Extensão completa utilizando técnicas profissionais para maior durabilidade.</div>
+            </div>
+
+            <div class="service-card" onclick="toggleDetails(this)">
+                <div class="service-info">
+                    <span class="service-title">Manutenção</span>
+                    <span class="duration">2 hrs</span>
+                    <span class="details-link">Ver detalhes</span>
+                </div>
+                <span class="price">€28</span>
+                <div class="details">Manutenção necessária para garantir a saúde da unha natural e estética.</div>
+            </div>
+
+            <div class="service-card" onclick="toggleDetails(this)">
+                <div class="service-info">
+                    <span class="service-title">Blindagem em Gel</span>
+                    <span class="duration">1h 30min</span>
+                    <span class="details-link">Ver detalhes</span>
+                </div>
+                <span class="price">€18</span>
+                <div class="details">Cria uma camada protetora que evita quebras e mantém o verniz por mais tempo.</div>
+            </div>
+
+            <div class="service-card" onclick="toggleDetails(this)">
+                <div class="service-info">
+                    <span class="service-title">Pedicure Tradicional</span>
+                    <span class="duration">1 hr</span>
+                    <span class="details-link">Ver detalhes</span>
+                </div>
+                <span class="price">€20</span>
+                <div class="details">Limpeza profunda e estética dos pés.</div>
+            </div>
+
+            <div class="service-card" onclick="toggleDetails(this)">
+                <div class="service-info">
+                    <span class="service-title">SPA dos Pés</span>
+                    <span class="duration">2 hrs</span>
+                    <span class="details-link">Ver detalhes</span>
+                </div>
+                <span class="price">€25</span>
+                <div class="details">Tratamento de hidratação profunda e relaxamento.</div>
+            </div>
+
+            <div class="service-card" onclick="toggleDetails(this)">
+                <div class="service-info">
+                    <span class="service-title">Remoção de Gel</span>
+                    <span class="duration">30 min</span>
+                    <span class="details-link">Ver detalhes</span>
+                </div>
+                <span class="price">€10</span>
+                <div class="details">Retirada segura sem danificar a placa ungueal.</div>
+            </div>
+        </section>
+
+        <section id="location" class="section">
+            <div class="location-card">
+                <h3>Visite o nosso Espaço</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Centro Comercial Rouxinol, 2º Piso<br>
+                Av. Luís de Camões, 10 - Loja 23<br>
+                2855-121 Corroios, Portugal</p>
+                <p><i class="far fa-clock"></i> Seg a Sex: 08h às 17h | Sáb: 08h às 12h</p>
+                <p><i class="fas fa-phone"></i> +351 931 393 453</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL DE AGENDAMENTO (CALENDÁRIO) -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 style="font-family: 'Hurricane', cursive; font-size: 2.5rem;">Agendar Horário</h3>
+            <p style="font-size: 0.8rem; letter-spacing: 1px; text-transform: uppercase;">Escolha a data e hora</p>
+            
+            <input type="datetime-local" id="appointment-date" class="date-input">
+            
+            <button class="btn-primary" onclick="confirmBooking()">Solicitar no WhatsApp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
