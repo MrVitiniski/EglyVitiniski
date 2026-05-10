@@ -187,11 +187,28 @@ body {
 .date-input {
     width: 100%;
     padding: 15px;
-    margin: 25px 0;
-    border: 1px solid #eee;
-    background: #fbfbfb;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     font-family: 'Montserrat', sans-serif;
-    outline: none;
+    background-color: #f9f9f9; /* Fundo leve para não ficar em branco */
+    color: #333;               /* Cor do texto */
+    font-size: 1rem;
+    appearance: none;          /* Remove estilos padrão do sistema */
+    -webkit-appearance: none;
+    position: relative;
+}
+
+.date-input::before {
+    content: 'Selecionar data e hora ';
+    color: #aaa;
+    margin-right: 10px;
+    font-size: 0.9rem;
+}
+
+.date-input:focus::before,
+.date-input:valid::before {
+    display: none;
 }
 
 /* REMOÇÃO DO BOTÃO FLUTUANTE */
