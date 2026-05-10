@@ -3,6 +3,9 @@
 A **100% Mobile-First** landing page designed for a high-end Nail Designer professional based in Portugal. This project focuses on luxury aesthetics, smooth user experience (UX), and a direct conversion funnel via WhatsApp integration.
 
 ---
+## 🌐 View project:
+
+🔗 **[Ver Projeto Online](https://mrvitiniski.github.io/EglyVitiniski/)**
 
 ## ✨ Features
 
@@ -50,7 +53,7 @@ To run this project on your machine:
 
 ## 👩‍🎨 Professional Reference
 Project developed for **Egly Vitiniski**.  
-Explore her work on Instagram: [@eglyvitiniskinails](https://instagram.com;eglyvitiniskinails)
+Explore her work on Instagram: [@eglyvitiniskinails](https://instagram.com/eglyvitiniskinails)
 
 ---
 
