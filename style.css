@@ -102,9 +102,9 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Alinha info na esquerda e preço na direita */
+    flex-wrap: wrap; /* ESSENCIAL: permite que o conteúdo pule para a linha de baixo */
+    justify-content: space-between;
     align-items: flex-start;
-    border-radius: 0;
     border-bottom: 1px solid #f0f0f0;
 }
 
@@ -137,6 +137,20 @@ body {
     font-size: 1.2rem;
     margin-left: 15px; /* Espaço para não encostar no texto */
     white-space: nowrap; /* Impede que o € e o número se separem */
+}
+
+.details {
+    display: none; /* Controlado pelo JS */
+    width: 100%;   /* Ocupa a linha toda */
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f9f9f9;
+    
+    /* Centralização do texto */
+    text-align: center; 
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-style: italic;
 }
 
 /* --- MODAL DE AGENDAMENTO --- */
